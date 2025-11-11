@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Diego Campos">
+  <meta name="description" content="Página de contacto y redes sociales del Restaurante El Jardín de los Sabores, en Madrid.">
+  <meta name="keywords" content="restaurante, contacto, encuesta, Madrid, reservas, El Jardín de los Sabores">
+  <title>Contacto - Restaurante El Jardín de los Sabores</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #000;
+      padding-top: 120px;
+    }
+
+    /* Cabecera fija */
+    header {
+      background-color: #6aa84f;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-family: 'Georgia', serif;
+    }
+
+    h1 {
+  color: #005eff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 2rem;
+
+
+    }
+
+    /* Menú de navegación */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background: orange;
+      padding: 1rem 0;
+      margin: 0;
+    }
+
+    nav ul li { margin: 0 2rem; }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav ul li a:hover { text-decoration: underline; }
+
+    main { padding: 1rem; max-width: 800px; margin: auto; }
+
+    h1 { color: #c10000; }
+    h2 { color: #c10000; }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #6aa84f;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background: orange;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      cursor: pointer;
+      margin-top: 1rem;
+      border-radius: 5px;
+    }
+
+    input[type="submit"]:hover {
+      background: #6aa84f;
+    }
+
+    footer {
+      text-align: center;
+      background: #6aa84f;
+      color: #000;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    /* Texto formateado */
+    .info-extra {
+      background: #f9f9f9;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-left: 4px solid orange;
+    }
+
+    .info-extra p {
+      line-height: 1.6;
+    }
+
+    .redes a {
+      color: #005eff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .redes a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabecera -->
+  <header>
+    <h1>Restaurante El Jardín de los Sabores</h1>
+  </header>
+
+  <!-- Menú de navegación -->
+  <nav aria-label="Menú principal de navegación">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="reservas.html">Reservas</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main>
+    <h2>Contacto y Encuesta</h2>
+
+    <!-- Formulario de contacto -->
+    <form>
+      <!-- Comentario: formulario de contacto con campos básicos -->
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="asunto">Asunto:</label>
+      <input type="text" id="asunto" name="asunto">
+
+      <label for="mensaje">Mensaje o comentarios:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <label for="valoracion">¿Cómo calificarías tu experiencia?</label>
+      <select id="valoracion" name="valoracion">
+        <option value="excelente">Excelente</option>
+        <option value="buena">Buena</option>
+        <option value="regular">Regular</option>
+        <option value="mala">Mala</option>
+      </select>
+
+      <input type="submit" value="Enviar Mensaje">
+    </form>
+
+    <!-- Información adicional -->
+    <div class="info-extra">
+      <p><em>¡Nos encanta escuchar tu opinión!</em> Cada mensaje nos ayuda a mejorar nuestro servicio.</p>
+      <p>También puedes seguirnos en nuestras redes sociales:</p>
+      <div class="redes">
+        <p><a href="#" target="_blank">Facebook</a> | 
+        <a href="#" target="_blank">Instagram</a> | 
+        <a href="#" target="_blank">Twitter</a></p>
+      </div>
+      <p><small><ins>Dirección:</ins> Gran Vía 45, Madrid</small></p>
+      <p><small><del>Teléfono antiguo: 600000000</del> <br><ins>Teléfono actual:</ins> 910 234 567</small></p>
+      <p>Correo electrónico: <mark>info@eljardindelossabores.es</mark></p>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Gran Vía 45, Madrid — Tel. 910 234 567</p>
+    <p>&copy; 2025 Restaurante El Jardín de los Sabores. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

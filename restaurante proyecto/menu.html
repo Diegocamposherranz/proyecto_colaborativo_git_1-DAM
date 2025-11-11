@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Diego Campos">
+  <meta name="description" content="Menú completo del Restaurante El Jardín de los Sabores: entrantes, platos principales, postres y bebidas.">
+  <meta name="keywords" content="restaurante, menú, comida mediterránea, platos, postres, bebidas, Madrid">
+  <title>Menú - Restaurante El Jardín de los Sabores</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #000;
+      padding-top: 120px;
+    }
+
+    /* Cabecera */
+    header {
+      background-color: #6aa84f;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-family: 'Georgia', serif;
+    }
+
+    h1 {
+  color: #005eff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 2rem;
+
+
+    }
+
+    /* Navegación */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background: orange;
+      padding: 1rem 0;
+      margin: 0;
+    }
+
+    nav ul li { margin: 0 2rem; }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contenido */
+    main {
+      padding: 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1 { color: #c10000; }
+    h2 { color: #005eff; margin-top: 2rem; }
+    p { line-height: 1.6; }
+
+    /* Tablas */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.6rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e6f4ea;
+      color: #6aa84f;
+    }
+
+    /* Imagen más pequeña */
+    .menu-img {
+      width: 45%;
+      border-radius: 10px;
+      margin: 1rem auto;
+      display: block;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      background: #6aa84f;
+      color: #000;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabecera -->
+  <header>
+    <h1>Restaurante El Jardín de los Sabores</h1>
+  </header>
+
+  <!-- Navegación -->
+  <nav aria-label="Menú principal de navegación">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="reservas.html">Reservas</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Comentario: Se muestran las diferentes secciones del menú organizadas en tablas -->
+    <h1>Menú del Día</h1>
+
+    <!-- Entrantes -->
+    <section>
+      <h2>Entrantes</h2>
+      <table>
+        <thead>
+          <tr><th>Plato</th><th>Descripción</th><th>Precio (€)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ensalada Mediterránea</td><td>Tomate, aceitunas, queso fresco y aceite de oliva virgen extra.</td><td>7.50</td></tr>
+          <tr><td>Gazpacho Andaluz</td><td>Sopa fría tradicional con hortalizas frescas.</td><td>6.00</td></tr>
+          <tr><td>Tabla de Quesos</td><td>Selección de quesos manchegos y curados con mermelada casera.</td><td>8.50</td></tr>
+        </tbody>
+      </table>
+      <img src="entrantes.jpg" alt="Entrantes variados del restaurante" class="menu-img">
+    </section>
+
+    <!-- Platos principales -->
+    <section>
+      <h2>Platos Principales</h2>
+      <table>
+        <thead>
+          <tr><th>Plato</th><th>Descripción</th><th>Precio (€)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Paella de Marisco</td><td>Arroz con gambas, calamares y mejillones frescos.</td><td>15.00</td></tr>
+          <tr><td>Solomillo de Ternera</td><td>Acompañado de patatas al romero y salsa de vino tinto.</td><td>18.50</td></tr>
+          <tr><td>Lasaña de Verduras</td><td>Pasta fresca con berenjena, calabacín y bechamel suave.</td><td>12.00</td></tr>
+        </tbody>
+      </table>
+      <img src="principales.jpg" alt="Platos principales del restaurante" class="menu-img">
+    </section>
+
+    <!-- Postres -->
+    <section>
+      <h2>Postres</h2>
+      <table>
+        <thead>
+          <tr><th>Postre</th><th>Descripción</th><th>Precio (€)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Tarta de Queso al Horno</td><td>Con base de galleta y sirope de frutos rojos.</td><td>5.00</td></tr>
+          <tr><td>Flan de Coco</td><td>Receta tradicional con toque tropical.</td><td>4.50</td></tr>
+          <tr><td>Helado Artesanal</td><td>Sabores de vainilla, chocolate o mango.</td><td>4.00</td></tr>
+        </tbody>
+      </table>
+      <img src="Postres.jpg" alt="Postres caseros del restaurante" class="menu-img">
+    </section>
+
+    <!-- Bebidas -->
+    <section>
+      <h2>Bebidas</h2>
+      <table>
+        <thead>
+          <tr><th>Bebida</th><th>Descripción</th><th>Precio (€)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Agua mineral</td><td>Natural o con gas.</td><td>1.50</td></tr>
+          <tr><td>Refrescos</td><td>Cola, naranja, limón.</td><td>2.00</td></tr>
+          <tr><td>Vino de la casa</td><td>Tinto o blanco.</td><td>3.50</td></tr>
+          <tr><td>Café o infusión</td><td>Ideal para finalizar la comida.</td><td>2.00</td></tr>
+        </tbody>
+      </table>
+      <img src="bebidas.jpg" alt="Bebidas del restaurante El Jardín de los Sabores" class="menu-img">
+    </section>
+
+    <!-- Video del restaurante -->
+    <section>
+      <h2>Descubre Nuestra Cocina</h2>
+      <!-- Comentario: iframe video de YouTube  -->
+      <iframe src="https://www.youtube.com/embed/jdU06jbiJWw" 
+              title="Vídeo del restaurante El Jardín de los Sabores" 
+              allowfullscreen>
+      </iframe>
+      <p><em>Vídeo integrado desde el canal oficial de YouTube, mostrando el ambiente y la preparación de los platos.</em></p>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Gran Vía 45, Madrid — Tel. 910 234 567</p>
+    <p>&copy; 2025 Restaurante El Jardín de los Sabores. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

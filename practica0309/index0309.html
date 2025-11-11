@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica CSS - UT02  Diego Campos</title>
+
+    <!-- Aquí enlazo mi archivo externo de estilos CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- 
+        Creo un div contenedor principal llamado "container" para agrupar todos los elementos de mi página 
+    -->
+    <div id="container">
+
+        <!-- 
+            Cabecera (header): aquí coloco el título de mi página. Luego lo voy a centrar y darle color de fondo con CSS.
+        -->
+        <header>
+            <h1>Mi Página Web con CSS</h1>
+        </header>
+
+        <!-- 
+            Barra de navegación (nav): aquí añado un menú con varios enlaces. Más adelante usaré CSS para colocarlos en una fila y darles estilo.
+        -->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Artículos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- 
+            Esta clase "clear" la usaré para limpiar los flotados de arriba,así evito que los elementos siguientes se monten sobre la barra de navegación.
+        -->
+        <div class="clear"></div>
+
+        <!-- 
+            Sección principal (section): aquí meto los artículos. Le pondré un id "content" para poder darle estilos concretos desde CSS.
+        -->
+        <section id="content">
+
+            <!-- 
+                Cada artículo tendrá la clase "article" para aplicarles el mismo estilo más adelante.
+            -->
+            <article class="article">
+                <h2>Artículo 1</h2>
+                <p>Este es el contenido del primer artículo. Aquí practico los estilos básicos de CSS.</p>
+            </article>
+
+            <article class="article">
+                <h2>Artículo 2</h2>
+                <p>En este segundo artículo probaré más combinaciones de estilos y colores.</p>
+            </article>
+
+            <article class="article">
+                <h2>Artículo 3</h2>
+                <p>Aquí agrego un tercer artículo para ver cómo se repiten los estilos automáticamente.</p>
+            </article>
+
+            <article class="article">
+                <h2>Artículo 4</h2>
+                <p>Por último, añado un cuarto artículo para completar el diseño de la página.</p>
+            </article>
+        </section>
+
+        <!-- 
+            Barra lateral (aside): aquí pondré un pequeño buscador. 
+            Más adelante le daré un ancho del 20% y un color de fondo.
+        -->
+        <aside>
+            <h3>Buscador</h3>
+            <form>
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </aside>
+
+        <div class="clear"></div>
+
+        <!-- 
+            Footer: aquí coloco el texto final de la web. 
+            Le pondré fondo negro y texto blanco con CSS.
+        -->
+        <footer>
+            <p>© 2025 Mi Página online web - Práctica CSS</p>
+        </footer>
+
+    </div>
+</body>
+</html>

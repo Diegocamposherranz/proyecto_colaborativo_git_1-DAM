@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservas - Restaurante El Jardín de los Sabores</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #000; }
+    header, footer { background: #6aa84f; color: white; text-align: center; padding: 1rem; }
+    nav ul { list-style: none; padding: 0; display: flex; justify-content: center; background: orange; margin: 0; }
+    nav ul li { margin: 0 1rem; }
+    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+    nav ul li a:hover { text-decoration: underline; }
+    main { padding: 1rem; max-width: 700px; margin: auto; }
+    h1, h2 { color: #6aa84f; }
+    label { display: block; margin-top: 0.5rem; color: blue; }
+    input, select, textarea { width: 100%; padding: 0.5rem; margin-top: 0.3rem; }
+    button { background: orange; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer; margin-top: 1rem; }
+    button:hover { background: #6aa84f; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Reservas</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="indexentrega7.html">Inicio</a></li>
+      <li><a href="menuentrega7.html">Menú</a></li>
+      <li><a href="reservasentrega7.html">Reservas</a></li>
+      <li><a href="contactoentrega7.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h2>Realiza tu reserva</h2>
+      <!-- Formulario con etiquetas accesibles -->
+      <form>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label for="hora">Hora</label>
+        <input type="time" id="hora" name="hora" required>
+
+        <label for="personas">Número de personas</label>
+        <input type="number" id="personas" name="personas" min="1" max="20" required>
+
+        <label for="comentarios">Comentarios</label>
+        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+        <button type="submit">Enviar Reserva</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Calle Falsa 123, Madrid — Tel. 658 957 421</p>
+    <p>&copy; 2025 Restaurante El Jardín de los Sabores.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Restaurante El Jardín de los Sabores</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #fff; color: #000; }
+    header, footer { background: #6aa84f; color: white; text-align: center; padding: 1rem; }
+    nav ul { list-style: none; padding: 0; display: flex; justify-content: center; background: orange; margin: 0; }
+    nav ul li { margin: 0 1rem; }
+    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+    nav ul li a:hover { text-decoration: underline; }
+    main { padding: 1rem; max-width: 700px; margin: auto; }
+    h1, h2 { color: #6aa84f; }
+    label { display: block; margin-top: 0.5rem; color: blue; }
+    input, textarea { width: 100%; padding: 0.5rem; margin-top: 0.3rem; }
+    button { background: orange; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer; margin-top: 1rem; }
+    button:hover { background: #6aa84f; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contacto</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="indexentrega7.html">Inicio</a></li>
+      <li><a href="menuentrega7.html">Menú</a></li>
+      <li><a href="reservasentrega7.html">Reservas</a></li>
+      <li><a href="contactoentrega7.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h2>Contáctanos</h2>
+      <form>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="asunto">Asunto</label>
+        <input type="text" id="asunto" name="asunto" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+
+      <h3>Información de contacto</h3>
+      <ul>
+        <li>Teléfono: 658 957 421</li>
+        <li>Correo: info@eljardindelossabores.es</li>
+        <li>Dirección: Calle Falsa 123, Madrid</li>
+      </ul>
+      <h3>Síguenos</h3>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Calle Falsa 123, Madrid — Tel. 658 957 421</p>
+    <p>&copy; 2025 Restaurante El Jardín de los Sabores.</p>
+  </footer>
+</body>
+</html>

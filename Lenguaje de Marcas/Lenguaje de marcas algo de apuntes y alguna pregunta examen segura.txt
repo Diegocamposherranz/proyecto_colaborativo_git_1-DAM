@@ -1,0 +1,8 @@
+Lenguaje de marcas.
+
+-html para presentar y xml para modelar.
+
+-italica es i que es cursiva y b es bold o bolt que es negrita.
+-Texto plano que se puede abrir con cualquier programa, sin ningun plug-in ni nada.
+
+Entra en exámen 100 x 100 que es la compacidad: y es que nos podemos encontrar formatos o instrucciones con texto real. La pregunta será tipo test.

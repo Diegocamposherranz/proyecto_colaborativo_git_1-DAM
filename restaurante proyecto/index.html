@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Diego Campos">
+  <meta name="description" content="Restaurante El Jardín de los Sabores, cocina mediterránea en Madrid.">
+  <meta name="keywords" content="restaurante, comida mediterránea, Madrid, menú, reservas, postres, El Jardín de los Sabores">
+  <title>Inicio - Restaurante El Jardín de los Sabores</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      background: #fff; 
+      color: #000; 
+      padding-top: 120px;
+    }
+
+    /* Cabecera fija */
+    header {
+      background-color: #6aa84f;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-family: 'Georgia', serif;
+    }
+
+    h1 {
+      color: #005eff;
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-top: 2rem;
+    }
+
+    /* Menú de navegación */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background: orange;
+      padding: 1rem 0;
+      margin: 0;
+    }
+
+    nav ul li { margin: 0 2rem; }
+
+    nav ul li a { 
+      color: white; 
+      text-decoration: none; 
+      font-weight: bold; 
+      font-size: 1.2rem;
+      letter-spacing: 0.5px;
+      transition: transform 0.2s ease;
+    }
+
+    nav ul li a:hover { 
+      text-decoration: underline;
+      transform: scale(1.1);
+    }
+
+    /* Contenido principal */
+    main { padding: 1rem; max-width: 900px; margin: auto; }
+    h1 { color: #c10000; }
+    h2 { color: #005eff; }
+    p { color: #000; line-height: 1.6; }
+    b { color: red; }
+
+    table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+    th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+    th { background-color: #e6f4ea; color: #6aa84f; }
+
+    aside { background: #f9f9f9; padding: 1rem; margin-top: 1rem; border-left: 4px solid orange; }
+
+    iframe { width: 100%; height: 250px; border: 0; margin-top: 1rem; border-radius: 10px; }
+
+    .imagen-salon {
+      width: 60%;
+      height: auto;
+      border-radius: 10px;
+      margin: 1rem auto;
+      display: block;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      text-align: center;
+      background: #6aa84f;
+      color: #000;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabecera fija -->
+  <header>
+    <h1>Restaurante El Jardín de los Sabores</h1>
+  </header>
+
+  <!-- Menú de navegación -->
+  <nav aria-label="Menú principal de navegación">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="reservas.html">Reservas</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Contenido principal -->
+  <main>
+    <section>
+      <h2>Bienvenidos a nuestro restaurante "Único"</h2>
+      <p>El <em>Jardín de los Sabores</em> es un lugar pensado para que te sientas como en casa. 
+      Aquí cada plato se prepara con cuidado y magia, usando ingredientes frescos que hacen que cada comida sea especial.
+      Nos gusta que la gente venga a <b>disfrutar</b>, relajarse y compartir buenos momentos alrededor de la mesa.</p>
+
+      <!-- Lista de especialidades -->
+      <h3>Nuestras especialidades</h3>
+      <ul>
+        <li>Cocina mediterránea tradicional con ingredientes frescos.</li>
+        <li>Postres artesanales elaborados cada día.</li>
+        <li>Ambiente familiar y servicio cercano.</li>
+      </ul>
+
+      <img class="imagen-salon" src="Vista del salón principal del restaurante El Jardín de los Sabores.jpg" alt="Vista del salón principal del restaurante El Jardín de los Sabores">
+    </section>
+
+    <section>
+      <h2>Tipos de Cocina y Postres</h2>
+      <table>
+        <thead>
+          <tr><th>Tipo</th><th>Ejemplo</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Cocina Italiana</td><td>Pasta al pesto</td></tr>
+          <tr><td>Cocina Brasileña</td><td>Feijoada</td></tr>
+          <tr><td>Cocina Mediterránea</td><td>Paella</td></tr>
+          <tr><td>Postres Jamaicanos</td><td>Flan de coco</td></tr>
+          <tr><td>Postres Rumanos</td><td>Tarta de nueces</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <aside>
+      <h3>Promociones del Mes</h3>
+      <p><mark>¡Menú degustación a mitad de precio</mark> los martes y jueves!</p>
+    </aside>
+
+    <section>
+      <h2>Ubicación</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.971884609589!2d-3.70379!3d40.41678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287c7a34a5c7%3A0x8e47b2a8d01375ea!2sGran%20V%C3%ADa%2045%2C%20Madrid!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
+        allowfullscreen=""
+        loading="lazy"
+        title="Mapa del restaurante El Jardín de los Sabores en Madrid">
+      </iframe>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Gran Vía 45, Madrid — Tel. 910 234 567</p>
+    <p>&copy; 2025 Restaurante El Jardín de los Sabores. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

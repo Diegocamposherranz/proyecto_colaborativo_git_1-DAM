@@ -1,0 +1,112 @@
+/* Reinicio básico */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fuente general */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contenedor principal */
+#container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+
+/* Cabecera */
+header {
+    background: red;
+    color: white;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    border-bottom: 3px solid black;
+}
+
+/* Barra de navegación */
+nav {
+    background: blue;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 3px solid black;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Limpiar flotados */
+.clear {
+    clear: both;
+}
+
+/* Sección principal */
+#content {
+    float: left;
+    width: 80%;
+    min-height: 300px;
+    padding: 10px;
+}
+
+/* Barra lateral */
+aside {
+    float: left;
+    width: calc(20% - 20px);
+    min-height: 300px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+/* Pie de página */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    clear: both;
+}
+
+/* Artículos */
+.article {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.article h2 {
+    color: blue;
+}
+
+/* Formulario del aside */
+aside input[type="text"] {
+    width: 80%;
+    padding: 5px;
+}
+
+aside button {
+    padding: 5px 10px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+aside button:hover {
+    background: darkblue;
+}
